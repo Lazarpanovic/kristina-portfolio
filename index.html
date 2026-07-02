@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kristina Kovačević | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <a href="#" class="logo">KK<span>.</span></a>
+
+        <ul class="nav-links">
+          <li><a href="#about">O meni</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#skills">Veštine</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">UI/UX DESIGN · WEB DESIGN · GRAPHIC DESIGN</p>
+          <h1>Zdravo, ja sam <span>Kristina Kovačević</span></h1>
+          <p>
+            Studentkinja završne godine UI/UX dizajna, fokusirana na kreiranje
+            modernih, preglednih i funkcionalnih digitalnih rešenja.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#portfolio" class="btn primary">Pogledaj radove</a>
+            <a href="#contact" class="btn secondary">Kontakt</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="profile-circle">KK</div>
+          <h2>Portfolio</h2>
+          <p>
+            Web dizajn, mobilne aplikacije, vizuelni identitet i grafički
+            dizajn.
+          </p>
+        </div>
+      </section>
+
+      <section id="about" class="section about-section">
+        <div class="section-heading">
+          <p>01</p>
+          <h2>O meni</h2>
+        </div>
+
+        <div class="about-grid">
+          <div>
+            <h3>Ko sam ja?</h3>
+            <p>
+              Zovem se Kristina Kovačević, imam 22 godine i studentkinja sam
+              treće, završne godine na Akademiji tehničkih i strukovnih studija
+              — Politehnika, smer UI/UX dizajn.
+            </p>
+          </div>
+
+          <div>
+            <h3>Kako razmišljam o dizajnu?</h3>
+            <p>
+              U svom radu težim balansu između estetike i funkcionalnosti. Volim
+              čiste kompozicije, jasnu hijerarhiju, dobar korisnički tok i
+              vizuelni stil koji podržava ideju projekta.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="section portfolio-section">
+        <div class="section-heading center">
+          <p>02</p>
+          <h2>Portfolio</h2>
+          <span>
+            Od mobilnih aplikacija do web sajtova i dizajna knjige — pet
+            projekata koji prikazuju različite oblasti mog rada.
+          </span>
+        </div>
+
+        <article class="project-card petopia-project">
+          <div class="petopia-slider">
+            <button
+              class="petopia-slide active"
+              type="button"
+              aria-label="Prikaži Petopia sliku 1"
+            >
+              <img src="petopia-3.jpg" alt="Petopia prikaz ljubimaca" />
+            </button>
+
+            <button
+              class="petopia-slide next"
+              type="button"
+              aria-label="Prikaži Petopia sliku 2"
+            >
+              <img src="petopia-1.jpg" alt="Petopia login ekran" />
+            </button>
+
+            <button
+              class="petopia-slide prev"
+              type="button"
+              aria-label="Prikaži Petopia sliku 3"
+            >
+              <img src="petopia-2.jpg" alt="Petopia checkout ekran" />
+            </button>
+          </div>
+
+          <div class="project-text petopia-text">
+            <span class="project-number">04</span>
+            <h3>Petopia</h3>
+            <p class="project-type">
+              Mobilna web aplikacija za kupovinu kućnih ljubimaca
+            </p>
+            <p>
+              Petopia je aplikacija za pregled i kupovinu kućnih ljubimaca.
+              Korisnik može da pretražuje ljubimce po kategorijama, pregleda
+              ponudu, dodaje omiljene izbore i završi proces kupovine kroz
+              jednostavan checkout.
+            </p>
+            <ul>
+              <li>Pretraga ljubimaca po kategorijama</li>
+              <li>Login i korisnički profil</li>
+              <li>Korpa i način plaćanja</li>
+              <li>Razigran vizuelni identitet sa ilustracijama šapica</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card featured">
+          <div class="project-text">
+            <span class="project-number">02</span>
+            <h3>Applause</h3>
+            <p class="project-type">
+              Web sajt za rezervaciju i kupovinu karata
+            </p>
+            <p>
+              Applause je koncept web sajta preko kog korisnici mogu da
+              pregledaju repertoar, izaberu projekciju i rezervišu ili kupe
+              kartu. Dizajn je inspirisan atmosferom pozorišta, sa tamnom
+              pozadinom, crvenim akcentima i jasnim korisničkim tokom.
+            </p>
+            <ul>
+              <li>Početna strana i repertoar</li>
+              <li>Rezervacija sedišta</li>
+              <li>Prijava korisnika</li>
+              <li>Tamni vizuelni identitet sa crvenim detaljima</li>
+            </ul>
+          </div>
+
+          <div class="project-images two-images">
+            <img
+              src="applause-1.jpg"
+              alt="Applause web sajt prikaz rezervacije"
+            />
+            <img
+              src="applause-2.jpg"
+              alt="Applause web sajt prikaz repertoara"
+            />
+          </div>
+        </article>
+
+        <article class="project-card reverse">
+          <div class="project-text">
+            <span class="project-number">03</span>
+            <h3>Coffice</h3>
+            <p class="project-type">
+              Mobilna web aplikacija za poručivanje pića
+            </p>
+            <p>
+              Coffice je koncept aplikacije namenjene brzoj i jednostavnoj
+              porudžbini omiljene kafe ili napitka. Fokus je na jednostavnom
+              izboru proizvoda, pregledu detalja, dodavanju u korpu i završetku
+              kupovine.
+            </p>
+            <ul>
+              <li>Kategorije proizvoda</li>
+              <li>Detaljna strana pića</li>
+              <li>Korpa i checkout</li>
+              <li>Topla braon paleta i zaobljeni UI elementi</li>
+            </ul>
+          </div>
+
+          <div class="project-images two-images">
+            <img
+              src="coffice-1.jpg"
+              alt="Coffice mobilna aplikacija početni ekran"
+            />
+            <img
+              src="coffice-2.jpg"
+              alt="Coffice mobilna aplikacija korpa i detalji proizvoda"
+            />
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-text">
+            <span class="project-number">04</span>
+            <h3>Groovia</h3>
+            <p class="project-type">Music streaming platforma</p>
+            <p>
+              Groovia je koncept digitalne platforme za slušanje muzike,
+              otkrivanje izvođača i pretragu numera. Interfejs je zamišljen kao
+              moderan dashboard sa bočnom navigacijom, player sekcijom i
+              registracijom korisnika.
+            </p>
+            <ul>
+              <li>Dashboard za muziku</li>
+              <li>Pretraga i popularni izvođači</li>
+              <li>Player komponenta</li>
+              <li>Tamna atmosfera sa plavo-zelenim tonovima</li>
+            </ul>
+          </div>
+
+          <div class="project-images two-images">
+            <img
+              src="groovia-1.jpg"
+              alt="Groovia music streaming platforma početni ekran"
+            />
+            <img
+              src="groovia-2.jpg"
+              alt="Groovia player i registracija korisnika"
+            />
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-text">
+            <span class="project-number">05</span>
+            <h3>Dizajn knjige</h3>
+            <p class="project-type">Grafički dizajn i layout publikacije</p>
+            <p>
+              Ovaj projekat predstavlja dizajn knjige, sa fokusom na naslovnu
+              stranu, tipografiju, raspored teksta i vizuelni ritam unutrašnjih
+              strana. Korišćen je smiren, elegantan stil sa tamnim tonovima i
+              pažljivo organizovanim sadržajem.
+            </p>
+            <ul>
+              <li>Dizajn korica</li>
+              <li>Layout unutrašnjih strana</li>
+              <li>Tipografska hijerarhija</li>
+              <li>Moderan i uredan print dizajn</li>
+            </ul>
+          </div>
+
+          <div class="project-images two-images">
+            <img src="knjiga-1.jpg" alt="Dizajn korica knjige" />
+            <img src="knjiga-2.jpg" alt="Dizajn unutrašnjih strana knjige" />
+          </div>
+        </article>
+      </section>
+
+      <section id="skills" class="section skills-section">
+        <div class="section-heading">
+          <p>03</p>
+          <h2>Veštine</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>UI/UX dizajn</h3>
+            <p>
+              Korisnički tokovi, wireframe, prototip, vizuelna hijerarhija i
+              responzivni interfejsi.
+            </p>
+          </div>
+
+          <div class="skill-card">
+            <h3>Web dizajn</h3>
+            <p>
+              Dizajn modernih web stranica, landing page rešenja i preglednih
+              digitalnih prezentacija.
+            </p>
+          </div>
+
+          <div class="skill-card">
+            <h3>Grafički dizajn</h3>
+            <p>
+              Layout publikacija, dizajn korica, vizuelni identitet i materijali
+              za digitalnu i štampanu upotrebu.
+            </p>
+          </div>
+
+          <div class="skill-card">
+            <h3>Alati</h3>
+            <p>
+              Figma, Adobe Photoshop, Illustrator, InDesign, osnove HTML-a i
+              CSS-a.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="contact-box">
+          <div class="contact-intro">
+            <p class="eyebrow">Kontakt</p>
+            <h2>Hajde da sarađujemo</h2>
+            <p>
+              Za dodatne informacije, saradnju ili prezentaciju radova, možete
+              me kontaktirati putem forme ili direktno na email adresu.
+            </p>
+
+            <a class="contact-link" href="mailto:kristina.kovacevic@email.com">
+              kristina.kovacevic@email.com
+            </a>
+          </div>
+
+          <form
+            class="contact-form"
+            action="mailto:kristina.kovacevic@email.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Ime</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="Ime"
+                  placeholder="Vaše ime"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="Email"
+                  placeholder="vas@email.com"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Naslov</label>
+              <input
+                type="text"
+                id="subject"
+                name="Naslov"
+                placeholder="Tema poruke"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Poruka</label>
+              <textarea
+                id="message"
+                name="Poruka"
+                rows="5"
+                placeholder="Napišite poruku..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="form-button">Pošalji poruku</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Kristina Kovačević · UI/UX Designer</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
