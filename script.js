@@ -34,13 +34,6 @@ function resetPetopiaAutoSlider() {
   startPetopiaAutoSlider();
 }
 
-petopiaSlides.forEach((slide, index) => {
-  slide.addEventListener("click", () => {
-    updatePetopiaSlider(index);
-    resetPetopiaAutoSlider();
-  });
-});
-
 updatePetopiaSlider(activeIndex);
 startPetopiaAutoSlider();
 
@@ -61,3 +54,58 @@ if (menuToggle && navLinks) {
     });
   });
 }
+
+const lightbox = document.getElementById("imageLightbox");
+const lightboxImage = document.getElementById("lightboxImage");
+const lightboxClose = document.querySelector(".lightbox-close");
+
+function openLightbox(image) {
+  lightboxImage.src = image.src;
+  lightboxImage.alt = image.alt;
+
+  lightbox.classList.add("active");
+  document.body.style.overflow = "hidden";
+}
+
+petopiaSlides.forEach((slide, index) => {
+  slide.addEventListener("click", () => {
+    const wasActive = index === activeIndex;
+    const image = slide.querySelector("img");
+
+    if (wasActive && image) {
+      openLightbox(image);
+      return;
+    }
+
+    updatePetopiaSlider(index);
+    resetPetopiaAutoSlider();
+  });
+});
+
+function closeLightbox() {
+  lightbox.classList.remove("active");
+  lightboxImage.src = "";
+  document.body.style.overflow = "";
+}
+
+const normalProjectImages = document.querySelectorAll(".project-images img");
+
+normalProjectImages.forEach((image) => {
+  image.addEventListener("click", () => {
+    openLightbox(image);
+  });
+});
+
+lightboxClose.addEventListener("click", closeLightbox);
+
+lightbox.addEventListener("click", (event) => {
+  if (event.target === lightbox) {
+    closeLightbox();
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && lightbox.classList.contains("active")) {
+    closeLightbox();
+  }
+});
